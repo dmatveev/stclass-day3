@@ -1,3 +1,10 @@
+"
+E-mail address as defined in
+
+   https://datatracker.ietf.org/doc/html/rfc3696#page-5
+
+
+"
 Class {
 	#name : #STCEmailAddress,
 	#superclass : #Object,
@@ -42,11 +49,9 @@ STCEmailAddress >> name: aString [
 { #category : #accessing }
 STCEmailAddress >> printOn: aStream [
 	aStream
-		nextPut: $<;
 		nextPutAll: name;
 		nextPut: $@;
-		nextPutAll: domain;
-		nextPut: $>
+		nextPutAll: domain
 ]
 
 { #category : #accessing }
