@@ -15,7 +15,7 @@ STCEmailAddressTest >> setUp [
 	email := STCEmailAddress from: emailString.
 ]
 
-{ #category : #initialization }
+{ #category : #testing }
 STCEmailAddressTest >> testCreation [
 	| e |
 	e := STCEmailAddress new
@@ -25,28 +25,28 @@ STCEmailAddressTest >> testCreation [
 	self assert: e domain equals: 'example.com'
 ]
 
-{ #category : #initialization }
+{ #category : #testing }
 STCEmailAddressTest >> testDomain [
 	self assert: email domain equals: 'example.com'
 ]
 
-{ #category : #initialization }
+{ #category : #testing }
 STCEmailAddressTest >> testFrom [
 	self shouldnt: [STCEmailAddress from: 'user@example.org'] raise: STCError.
 	self shouldnt: [STCEmailAddress from: 'user-name@server-name.com'] raise: STCError.
 ]
 
-{ #category : #initialization }
+{ #category : #testing }
 STCEmailAddressTest >> testFromInvalid [
 	self should: [ STCEmailAddress from: '' ] raise: Error. 
 ]
 
-{ #category : #initialization }
+{ #category : #testing }
 STCEmailAddressTest >> testName [
 	self assert: email name equals: 'user'
 ]
 
-{ #category : #initialization }
+{ #category : #testing }
 STCEmailAddressTest >> testPrintOn [
 	| s |
 	s := WriteStream on: ''.
@@ -54,7 +54,7 @@ STCEmailAddressTest >> testPrintOn [
 	self assert: s contents equals: emailString
 ]
 
-{ #category : #initialization }
+{ #category : #testing }
 STCEmailAddressTest >> testPrintString [
 	self assert: email printString equals: emailString
 ]
