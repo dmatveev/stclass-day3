@@ -8,7 +8,7 @@ Class {
 	#category : #'StClassRus-Tests'
 }
 
-{ #category : #initialization }
+{ #category : #running }
 STCEmailAddressTest >> setUp [
 	super setUp.
 	emailString := 'user@example.com'.
