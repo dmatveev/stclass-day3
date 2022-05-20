@@ -5,7 +5,7 @@ Class {
 		'email',
 		'emailString'
 	],
-	#category : #'StClassRus-Tests'
+	#category : #'StClassRus-Day3-Tests'
 }
 
 { #category : #running }

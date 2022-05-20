@@ -12,7 +12,7 @@ Class {
 		'name',
 		'domain'
 	],
-	#category : #StClassRus
+	#category : #'StClassRus-Day3-StClassRus-Day3'
 }
 
 { #category : #'instance creation' }

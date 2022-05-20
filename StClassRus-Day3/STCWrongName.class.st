@@ -1,5 +1,5 @@
 Class {
 	#name : #STCWrongName,
 	#superclass : #STCError,
-	#category : #StClassRus
+	#category : #'StClassRus-Day3-StClassRus-Day3'
 }
